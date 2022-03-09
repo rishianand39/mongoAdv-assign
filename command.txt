@@ -1,0 +1,7 @@
+ db.dummy.find({movie_name:{$eq:"Ploceus intermedius"}}).pretty() 
+ db.dummy.find({movie_name:{$ne:"Ploceus intermedius"}}).pretty()
+db.dummy.find({budget:{$gte:11304}}).pretty()
+db.dummy.find({budget:{$lte:11304}}).pretty() 
+ db.dummy.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty()
+ db.dummy.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty() 
+ db.dummy.find({$nor:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty() 
